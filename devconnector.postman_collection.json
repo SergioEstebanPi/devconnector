@@ -61,6 +61,31 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "localhost:5000/api/auth",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDNmODA1NDNkM2QxMjNiOGNmODQxIn0sImlhdCI6MTU3ODk3NTEwNCwiZXhwIjoxNTc5MzM1MTA0fQ.i8ubB5tP7MWSjZscvRi06FiFEILdMRD3ubcdKljqiXQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
