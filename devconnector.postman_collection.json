@@ -41,7 +41,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Brad Traversy\",\n\t\"email\": \"mono@mono.com\",\n\t\"password\": \"123456\"\n}",
+							"raw": "{\n\t\"name\": \"Usuario10\",\n\t\"email\": \"usuario10@correo.com\",\n\t\"password\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -100,7 +100,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"usuario7@correo.com\",\n\t\"password\": \"123456\"\n}"
+							"raw": "{\n\t\"email\": \"usuario10@correo.com\",\n\t\"password\": \"123456\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/api/auth",
@@ -191,6 +191,46 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "localhost:5000/api/profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"company\": \"Example Media\",\n\t\"status\": \"Instructor\",\n\t\"website\": \"htts://www.example.com\",\n\t\"skills\": \"HTML, CSS, PHP, Ruby, JS, PHP, Nodejs\",\n\t\"location\": \"Boston, MA\",\n\t\"bio\": \"I am a developer and instructor for the academy\",\n\t\"githubusername\": \"exampleinstructor\",\n\t\"twitter\": \"htts://twitter.com/exampleinstructor\",\n\t\"facebook\": \"htts://twitter.com/exampleinstructor\",\n\t\"youtube\": \"htts://twitter.com/exampleinstructor\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -201,11 +241,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000",
+					"raw": "localhost:5000/",
 					"host": [
 						"localhost"
 					],
-					"port": "5000"
+					"port": "5000",
+					"path": [
+						""
+					]
 				}
 			},
 			"response": []
