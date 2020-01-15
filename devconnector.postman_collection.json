@@ -69,10 +69,39 @@
 						"header": [
 							{
 								"key": "x-auth-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDNmODA1NDNkM2QxMjNiOGNmODQxIn0sImlhdCI6MTU3ODk3NTEwNCwiZXhwIjoxNTc5MzM1MTA0fQ.i8ubB5tP7MWSjZscvRi06FiFEILdMRD3ubcdKljqiXQ",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4",
 								"type": "text"
 							}
 						],
+						"url": {
+							"raw": "localhost:5000/api/auth",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/auth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"usuario7@correo.com\",\n\t\"password\": \"123456\"\n}"
+						},
 						"url": {
 							"raw": "localhost:5000/api/auth",
 							"host": [
@@ -132,6 +161,32 @@
 							"path": [
 								"api",
 								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/profile/me",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/profile/me",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"me"
 							]
 						}
 					},
