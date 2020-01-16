@@ -231,6 +231,76 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "localhost:5000/api/profile",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/profile",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/profile/user/5e1e7a88eb8c251951fc7742",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5000/api/profile/user/5e1e7cfe5033611a1148eb1b",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"user",
+								"5e1e7cfe5033611a1148eb1b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/profile/",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZmMxZDliZDczZWIxZDlhNWVkMDU2In0sImlhdCI6MTU3OTEzOTU0NiwiZXhwIjoxNTc5NDk5NTQ2fQ.n7zCynG6qm1Sfb8maR9_HR1x8zU33ybE5XeaAIGbCpM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:5000/api/profile/",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								""
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
