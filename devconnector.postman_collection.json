@@ -301,6 +301,47 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "localhost:5000/api/profile/experience",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZTdjZmU1MDMzNjExYTExNDhlYjFiIn0sImlhdCI6MTU3OTE0MDMxMiwiZXhwIjoxNTc5NTAwMzEyfQ.0djxWyDEDzPeNWIncDVERcmGp98yN7mzt25EI_ntdWY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"title\": \"Instructor and Senior Developer\",\n\t\"company\": \"New Company\",\n\t\"location\": \"New location\",\n\t\"from\": \"8-10-2010\",\n\t\"current\": true,\n\t\"description\": \"Create projects and courses on web development\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/profile/experience",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"experience"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
