@@ -100,7 +100,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"usuario10@correo.com\",\n\t\"password\": \"123456\"\n}"
+							"raw": "{\n\t\"email\": \"johndoe@correo.com\",\n\t\"password\": \"123456\"\n}"
 						},
 						"url": {
 							"raw": "localhost:5000/api/auth",
@@ -336,7 +336,7 @@
 					"response": []
 				},
 				{
-					"name": "localhost:5000/api/posts/5e211c9564de0f2b809f3d45",
+					"name": "localhost:5000/api/posts/like/5e2118b1e83b2e2aa56fa64e",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -377,6 +377,102 @@
 								"api",
 								"posts",
 								"5e211c9564de0f2b809f3d45"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/posts/unlike/5e21180be83b2e2aa56fa64d",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZTdjZmU1MDMzNjExYTExNDhlYjFiIn0sImlhdCI6MTU3OTE0MDMxMiwiZXhwIjoxNTc5NTAwMzEyfQ.0djxWyDEDzPeNWIncDVERcmGp98yN7mzt25EI_ntdWY",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"text\": \"Hello post 2 from my user10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/posts/like/5e2118b1e83b2e2aa56fa64e",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"posts",
+								"like",
+								"5e2118b1e83b2e2aa56fa64e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/posts/unlike/5e21180be83b2e2aa56fa64d",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZTdjZmU1MDMzNjExYTExNDhlYjFiIn0sImlhdCI6MTU3OTE0MDMxMiwiZXhwIjoxNTc5NTAwMzEyfQ.0djxWyDEDzPeNWIncDVERcmGp98yN7mzt25EI_ntdWY",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"text\": \"Hello post 2 from my user10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/posts/unlike/5e21180be83b2e2aa56fa64d",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"posts",
+								"unlike",
+								"5e21180be83b2e2aa56fa64d"
 							]
 						}
 					},
@@ -498,7 +594,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:5000/api/profile/user/5e1e7cfe5033611a1148eb1b",
+							"raw": "localhost:5000/api/profile/user/5e1d43defb4454135caef98d",
 							"host": [
 								"localhost"
 							],
@@ -507,7 +603,7 @@
 								"api",
 								"profile",
 								"user",
-								"5e1e7cfe5033611a1148eb1b"
+								"5e1d43defb4454135caef98d"
 							]
 						}
 					},
