@@ -431,7 +431,7 @@
 					"response": []
 				},
 				{
-					"name": "localhost:5000/api/posts/unlike/5e21180be83b2e2aa56fa64d",
+					"name": "localhost:5000/api/posts/comment/5e21180be83b2e2aa56fa64d",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -473,6 +473,103 @@
 								"posts",
 								"unlike",
 								"5e21180be83b2e2aa56fa64d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/posts/comment/5e21180be83b2e2aa56fa64d/5e21223bf5e1ff2cae725817",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-auth-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZTdjZmU1MDMzNjExYTExNDhlYjFiIn0sImlhdCI6MTU3OTE0MDMxMiwiZXhwIjoxNTc5NTAwMzEyfQ.0djxWyDEDzPeNWIncDVERcmGp98yN7mzt25EI_ntdWY",
+								"disabled": true
+							},
+							{
+								"key": "x-auth-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"text\": \"Hello post 2 from my user10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/posts/comment/5e21180be83b2e2aa56fa64d",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"posts",
+								"comment",
+								"5e21180be83b2e2aa56fa64d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/posts/comment/5e21180be83b2e2aa56fa64d/5e21223bf5e1ff2cae725817",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-auth-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZTdjZmU1MDMzNjExYTExNDhlYjFiIn0sImlhdCI6MTU3OTE0MDMxMiwiZXhwIjoxNTc5NTAwMzEyfQ.0djxWyDEDzPeNWIncDVERcmGp98yN7mzt25EI_ntdWY",
+								"disabled": true
+							},
+							{
+								"key": "x-auth-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"text\": \"Delete me comment\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5000/api/posts/comment/5e21180be83b2e2aa56fa64d/5e21223bf5e1ff2cae725817",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"posts",
+								"comment",
+								"5e21180be83b2e2aa56fa64d",
+								"5e21223bf5e1ff2cae725817"
 							]
 						}
 					},
