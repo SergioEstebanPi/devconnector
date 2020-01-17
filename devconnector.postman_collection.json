@@ -41,7 +41,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Usuario10\",\n\t\"email\": \"usuario10@correo.com\",\n\t\"password\": \"123456\"\n}",
+							"raw": "{\n\t\"name\": \"John Doe2\",\n\t\"email\": \"johndoe2@correo.com\",\n\t\"password\": \"123456\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -205,13 +205,13 @@
 							},
 							{
 								"key": "x-auth-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZDQzZGVmYjQ0NTQxMzVjYWVmOThkIn0sImlhdCI6MTU3ODk3NjIzMSwiZXhwIjoxNTc5MzM2MjMxfQ.gl2OjMsH4XEaBtx6nfjCbfRbSPfPBBS3VtMlU4lnQE4",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZmMxZDliZDczZWIxZDlhNWVkMDU2In0sImlhdCI6MTU3OTEzOTU0NiwiZXhwIjoxNTc5NDk5NTQ2fQ.n7zCynG6qm1Sfb8maR9_HR1x8zU33ybE5XeaAIGbCpM",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"company\": \"Example Media\",\n\t\"status\": \"Instructor\",\n\t\"website\": \"htts://www.example.com\",\n\t\"skills\": \"HTML, CSS, PHP, Ruby, JS, PHP, Nodejs\",\n\t\"location\": \"Boston, MA\",\n\t\"bio\": \"I am a developer and instructor for the academy\",\n\t\"githubusername\": \"exampleinstructor\",\n\t\"twitter\": \"htts://twitter.com/exampleinstructor\",\n\t\"facebook\": \"htts://twitter.com/exampleinstructor\",\n\t\"youtube\": \"htts://twitter.com/exampleinstructor\"\n}",
+							"raw": "{\n\t\"company\": \"TEST Example Media 2\",\n\t\"status\": \"Developer\",\n\t\"website\": \"htts://www.example.com\",\n\t\"skills\": \"PHP, Ruby, JS, PHP, Nodejs\",\n\t\"location\": \"Boston, MA\",\n\t\"bio\": \"I am a developer and instructor for the academy\",\n\t\"githubusername\": \"exampleinstructor2\",\n\t\"twitter\": \"htts://twitter.com/exampleinstructor\",\n\t\"facebook\": \"htts://facebook.com/exampleinstructor\",\n\t\"youtube\": \"htts://youtube.com/exampleinstructor\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -338,6 +338,33 @@
 								"api",
 								"profile",
 								"experience"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:5000/api/profile/experience/5e21067db381dc1e3d332499",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWUxZTdjZmU1MDMzNjExYTExNDhlYjFiIn0sImlhdCI6MTU3OTE0MDMxMiwiZXhwIjoxNTc5NTAwMzEyfQ.0djxWyDEDzPeNWIncDVERcmGp98yN7mzt25EI_ntdWY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:5000/api/profile/experience/5e21067db381dc1e3d332499",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"profile",
+								"experience",
+								"5e21067db381dc1e3d332499"
 							]
 						}
 					},
