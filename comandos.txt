@@ -3,3 +3,8 @@ npm init
 npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
 npm i -D nodemon concurrently
 npm run server
+npx create-react-app client
+npm run dev
+npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
+cd client/
+rm -rf .git
