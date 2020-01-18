@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
-import axios from 'axios'
 
 const Register = () => {
     const [formData, setFormData] = useState(
@@ -24,7 +23,7 @@ const Register = () => {
         if(password !== password2){
             console.log('The passwords do not match')
         } else {
-            console.log('SUCCESS');
+            console.log('SUCCESS')
             //console.log(formData)
         }
     }

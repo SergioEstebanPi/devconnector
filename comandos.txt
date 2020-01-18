@@ -21,4 +21,5 @@ npx create-react-app client
 npm run dev
 npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
 cd client/
+npm i uuid
 rm -rf .git
