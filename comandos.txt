@@ -1,3 +1,17 @@
+// Extensiones de VSCODE para MERN STACK
+// Auto import
+// Auto import for Javascript
+// Auto rename tag
+// Beautify
+// Bracket Pair Colorized
+// ES7 React/Redux/GraphQL/React-Navite snippets
+// ESLint
+// Prettier
+// Live Sass Compiler
+// React Native Tools
+// React-Native/React/Redux/Redux snippets for es6/ES7
+// Simple React snippets
+// Terminal
 git init
 npm init
 npm i express express-validator bcryptjs config gravatar jsonwebtoken mongoose request
