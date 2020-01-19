@@ -10,6 +10,7 @@ const {
 
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
+const Post = require('../../models/Post');
 
 // @route GET api/profile/me
 // @desc Get current users profile
@@ -105,7 +106,8 @@ router.post('/', [
 
         if (profile) {
             // Update
-            profile = await Profile.findOneAndUpdate({
+            //profile = await Profile.findOneAndUpdate({
+            profile = await Profile.findAndModify({
                 user: req.user.id
             }, {
                 $set: profileFields
@@ -181,7 +183,10 @@ router.delete('/', auth, async (req, res) => {
 
     try {
         // @todo - remove users posts
-
+        // Remove user posts
+        const posts = await Post.deleteMany({
+            user: req.user.id
+        });
         // Remove profile
         const profile = await Profile.findOneAndRemove({
             user: req.user.id
@@ -262,10 +267,15 @@ router.put('/experience', [auth, [
 // @route DELETE api/profile
 // @desc Delete profile, user and posts
 // @access Private
+/*
 router.delete('/', auth, async (req, res) => {
-
+    console.log('delete 267');
     try {
         // @todo - remove users posts
+        // Remove user posts
+        const posts = await Post.deleteMany({
+            user: req.user.id
+        });
 
         // Remove profile
         const profile = await Profile.findOneAndRemove({
@@ -285,6 +295,7 @@ router.delete('/', auth, async (req, res) => {
         res.status(500).send('Server Error');
     }
 });
+*/
 
 // @route DELETE api/profile/experience/:exp_id
 // @desc Delete profile experience
