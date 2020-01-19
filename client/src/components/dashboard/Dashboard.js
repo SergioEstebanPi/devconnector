@@ -1,9 +1,10 @@
 import React, { Fragment, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { getCurrentProfile } from '../../actions/profile'
 import Spinner from '../layout/Spinner'
 import { Link } from 'react-router-dom'
+import { getCurrentProfile } from '../../actions/profile'
+import DashboardActions from './DashboardActions'
 
 export const Dashboard = ( { 
     getCurrentProfile,
@@ -26,7 +27,7 @@ export const Dashboard = ( {
                 </p>
                 { profile !== null ? (
                     <Fragment>
-                        has
+                        <DashboardActions />
                     </Fragment>
                 ) : (
                     <Fragment>
