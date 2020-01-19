@@ -106,8 +106,8 @@ router.post('/', [
 
         if (profile) {
             // Update
-            //profile = await Profile.findOneAndUpdate({
-            profile = await Profile.findAndModify({
+            profile = await Profile.findOneAndUpdate({
+            //profile = await Profile.findAndModify({ do not works
                 user: req.user.id
             }, {
                 $set: profileFields
