@@ -4,16 +4,18 @@ import { connect } from 'react-redux'
 import Spinner from '../layout/Spinner'
 import { Link } from 'react-router-dom'
 import { getProfileById } from '../../actions/profile'
+import ProfileTop from './ProfileTop'
+import ProfileAbout from './ProfileAbout'
 
 const Profile = ({ 
-    getProfileById, 
-    profile: {profile, loading}, 
+    getProfileById,
+    profile: { profile, loading },
     auth, 
-    match 
+    match
 }) => {
     useEffect(() => {
         getProfileById(match.params.id)
-    }, [getProfileById])
+    }, [getProfileById, match.params.id])
 
     return (
         <Fragment>
@@ -33,53 +35,10 @@ const Profile = ({
 
                 <div className="profile-grid my-1">
                     {/* <!-- Top --> */}
-                    <div className="profile-top bg-primary p-2">
-                        <img
-                        className="round-img my-1"
-                        src={profile.avatar}
-                        alt=""
-                        />
-                        <h1 className="large">{profile.name}</h1>
-                        <p className="lead">{profile.company}</p>
-                        <p>{profile.location}</p>
-                        <div className="icons my-1">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fas fa-globe fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-twitter fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-linkedin fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-youtube fa-2x"></i>
-                        </a>
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <i className="fab fa-instagram fa-2x"></i>
-                        </a>
-                        </div>
-                    </div>
+                    <ProfileTop profile={profile} />
 
                     {/* <!-- About --> */}
-                    <div className="profile-about bg-light p-2">
-                        <h2 className="text-primary">{profile.name}Bio</h2>
-                        <p>
-                        {profile.bio}
-                        </p>
-                        <div className="line"></div>
-                        <h2 className="text-primary">Skill Set</h2>
-                        <div className="skills">
-                        <div className="p-1"><i className="fa fa-check"></i> HTML</div>
-                        <div className="p-1"><i className="fa fa-check"></i> CSS</div>
-                        <div className="p-1"><i className="fa fa-check"></i> JavaScript</div>
-                        <div className="p-1"><i className="fa fa-check"></i> Python</div>
-                        <div className="p-1"><i className="fa fa-check"></i> C#</div>
-                        </div>
-                    </div>
+                    <ProfileAbout profile={profile} />
 
                     {/* <!-- Experience --> */}
                     <div className="profile-exp bg-white p-2">
@@ -132,7 +91,7 @@ const Profile = ({
                         </h2>
                         <div className="repo bg-white p-1 my-1">
                         <div>
-                            <h4><a href="#" target="_blank"
+                            <h4><a href="#!" target="_blank"
                                 rel="noopener noreferrer">Repo One</a></h4>
                             <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -149,7 +108,7 @@ const Profile = ({
                         </div>
                         <div className="repo bg-white p-1 my-1">
                         <div>
-                            <h4><a href="#" target="_blank"
+                            <h4><a href="#!" target="_blank"
                                 rel="noopener noreferrer">Repo Two</a></h4>
                             <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit.
