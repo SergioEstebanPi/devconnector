@@ -18,7 +18,7 @@ export default function(state = initialState, action) {
             return {
                 ...state,
                 posts: payload,
-                loadig: false
+                loading: false
             };
         case POST_ERROR:
             return {
