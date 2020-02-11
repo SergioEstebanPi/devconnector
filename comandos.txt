@@ -27,3 +27,9 @@ rm -rf .git
 // npm run build
 heroku --version
 heroku create
+git push heroku master
+heroku open
+heroku logs
+heroku logs -n 200
+heroku logs --tail
+yarn add serialize-javascript
