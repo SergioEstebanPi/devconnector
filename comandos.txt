@@ -23,3 +23,5 @@ npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extens
 cd client/
 npm i uuid
 rm -rf .git
+// cd client
+// npm run build
