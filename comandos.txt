@@ -25,3 +25,5 @@ npm i uuid
 rm -rf .git
 // cd client
 // npm run build
+heroku --version
+heroku create
