@@ -33,3 +33,5 @@ heroku logs
 heroku logs -n 200
 heroku logs --tail
 yarn add serialize-javascript
+git rm --cached config/default.json
+git rm --cached config/production.json
