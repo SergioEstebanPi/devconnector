@@ -30,7 +30,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
     "request": "^2.88.0",
-    "serialize-javascript": "^2.1.2"
+    "serialize-javascript": "^4.0.0"
   },
   "devDependencies": {
     "concurrently": "^5.0.2",
